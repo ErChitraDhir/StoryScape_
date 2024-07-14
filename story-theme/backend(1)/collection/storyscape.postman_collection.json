@@ -1,0 +1,673 @@
+{
+	"info": {
+		"_postman_id": "c23a2baf-7103-4723-972f-4d5ccaa7cf80",
+		"name": "storyscape",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users and auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@storyscape.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "user1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "user1",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "9875678900",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Model Town",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getall",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/getall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Themes",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "themeName",
+									"value": "Kids Story",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"type": "file",
+									"src": "/C:/Users/Dell/Downloads/eventre-master (2)/eventre-master/eventre-master/images/gallery/gallery-five.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/theme/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"theme",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/theme/getall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"theme",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6555a0b37357cdb63d0bb1f7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/theme/getsingle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"theme",
+								"getsingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "themeName",
+									"value": "Kids Story 123",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"type": "file",
+									"src": "/C:/Users/Dell/Downloads/eventre-master (2)/eventre-master/eventre-master/images/gallery/gallery-full-popup-eight.jpg"
+								},
+								{
+									"key": "_id",
+									"value": "6555a0b37357cdb63d0bb1f7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/theme/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"theme",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6555a0b37357cdb63d0bb1f7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/theme/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"theme",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stories",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "themeId",
+									"value": "6555a583b682af9a454ad8ad",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"type": "file",
+									"src": "/C:/Users/Dell/Downloads/eventre-master (2)/eventre-master/eventre-master/images/gallery/gallery-five.jpg"
+								},
+								{
+									"key": "storyTitle",
+									"value": "Title 1",
+									"type": "text"
+								},
+								{
+									"key": "storyWriter",
+									"value": "DEcan",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Testing story",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/story/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"story",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/story/getall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"story",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6555a5e0b682af9a454ad8b0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/story/getsingle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"story",
+								"getsingle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_id",
+									"value": "6555a5e0b682af9a454ad8b0",
+									"type": "text"
+								},
+								{
+									"key": "themeId",
+									"value": "6555a583b682af9a454ad8ad",
+									"type": "text"
+								},
+								{
+									"key": "storyTitle",
+									"value": "Title One",
+									"type": "text"
+								},
+								{
+									"key": "storyWriter",
+									"value": "Deam",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Testing story 123",
+									"type": "text"
+								},
+								{
+									"key": "thumbnail",
+									"type": "file",
+									"src": "/C:/Users/Dell/Downloads/eventre-master (2)/eventre-master/eventre-master/images/gallery/gallery-full-popup-sven.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/story/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"story",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "6555a5e0b682af9a454ad8b0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/story/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"story",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "user 1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "user1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "3",
+									"description": "1-5",
+									"type": "text"
+								},
+								{
+									"key": "feedback",
+									"value": "Good service",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/feedback/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"feedback",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/feedback/getall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"feedback",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTRiNDVhNWJiNWE4MGFhODRiYWYzNiIsImVtYWlsIjoiYWRtaW5Ac3RvcnlzY2FwZS5jb20iLCJpYXQiOjE3MDAwNTAwMjl9.NDCfAjlAE0ZJSPajlj2mfqv9GvyTZ9C4IbJo5ovh2eE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/dashboard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
