@@ -2,6 +2,8 @@
 # StoryScape
 StoryScape is an interactive web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to create, share, and explore stories in a collaborative and immersive environment.
 
+![StoryScape Logo](https://mir-s3-cdn-cf.behance.net/projects/404/79c131148566535.Y3JvcCwxMDUyLDgyMywxNzQsMjA.png)
+
 
 ## Features:
 
@@ -21,6 +23,8 @@ StoryScape is an interactive web application built using the MERN stack (MongoDB
 - **Authentication**: JSON Web Tokens (JWT)
 - **Styling**: CSS, Bootstrap
 
+## Document
+### https://drive.google.com/file/d/1T-41RD_E15qo-rT_h1UZxUdDtp5of0IL/view
 ## API Reference
 
 ### Get all stories
@@ -52,7 +56,10 @@ StoryScape is an interactive web application built using the MERN stack (MongoDB
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `title`      | `string` | **Required**. The title of the story |
+| `title`      | `string` | **Required**. The title of the story | 
+| `content`    | `string` | **Required**. The content of the story | 
+| `author`     | `string` | **Required**. The author of the story | 
+
 
 
 #### Delete a story
@@ -65,5 +72,6 @@ StoryScape is an interactive web application built using the MERN stack (MongoDB
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `title`      | `string` | **Required**. The title of the story |
+
 
 
