@@ -2,7 +2,7 @@
 # StoryScape
 StoryScape is an interactive web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to create, share, and explore stories in a collaborative and immersive environment.
 
-![StoryScape Logo](https://mir-s3-cdn-cf.behance.net/projects/404/79c131148566535.Y3JvcCwxMDUyLDgyMywxNzQsMjA.png)
+<!--![StoryScape Logo](https://mir-s3-cdn-cf.behance.net/projects/404/79c131148566535.Y3JvcCwxMDUyLDgyMywxNzQsMjA.png)-->
 
 
 ## Features:
