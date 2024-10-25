@@ -1,6 +1,6 @@
 import axios from "axios"
-const BASE_URL="http://localhost:5000/api/"
-export const IMAGE_BASE_URL="http://localhost:5000/"
+const BASE_URL="https://storyscape.onrender.com/api/"
+export const IMAGE_BASE_URL="https://storyscape.onrender.com"
 
 const header = {
     "Authorization" : localStorage.getItem("token")
